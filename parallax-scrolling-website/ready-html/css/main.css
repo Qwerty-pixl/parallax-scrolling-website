@@ -214,231 +214,46 @@ li {
 
 
 
-
-
-
-.footer { 
-    position: relative; 
-    width: 100%; 
-    background-color: #2f70af  ; 
-    min-height: 100px; 
-    padding: 20px 50px; 
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    flex-direction: column; 
-  } 
-   
-  .social-icon, 
-  .menu { 
-    position: relative; 
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    margin: 10px 0; 
-    flex-wrap: wrap; 
-  } 
-   
-  .social-icon__item, 
-  .menu__item { 
-    list-style: none; 
-  } 
-   
-  .social-icon__link { 
-    font-size: 2rem; 
-    color: #fff; 
-    margin: 0 10px; 
-    display: inline-block; 
-    transition: 0.5s; 
-  } 
-  .social-icon__link:hover { 
-    transform: translateY(-10px); 
-  } 
-   
-  .menu__link { 
-    font-size: 1.2rem; 
-    color: #fff; 
-    margin: 0 10px; 
-    display: inline-block; 
-    transition: 0.5s; 
-    text-decoration: none; 
-    opacity: 0.75; 
-    font-weight: 300; 
-  } 
-   
-  .menu__link:hover { 
-    opacity: 1; 
-  } 
-   
-  .footer p { 
-    color: #fff; 
-    margin: 15px 0 10px 0; 
-    font-size: 1rem; 
-    font-weight: 300; 
-  } 
-   
-  .wave { 
-    position: absolute; 
-    top: -100px; 
-    left: 0; 
-    width: 100%; 
-    height: 100px; 
-    background: url("https://i.ibb.co/wQZVxxk/wave.png"); 
-    background-size: 1000px 100px; 
-    filter: brightness(0) saturate(100%) invert(32%) sepia(88%) saturate(526%) hue-rotate(170deg) brightness(100%) contrast(83%); 
-  } 
-   
-  .wave#wave1 { 
-    z-index: 1000; 
-    opacity: 1; 
-    bottom: 0; 
-    animation: animateWaves 4s linear infinite; 
-  } 
-   
-  .wave#wave2 { 
-    z-index: 999; 
-    opacity: 0.5; 
-    bottom: 10px; 
-    animation: animate 4s linear infinite !important; 
-  } 
-   
-  .wave#wave3 { 
-    z-index: 1000; 
-    opacity: 0.2; 
-    bottom: 15px; 
-    animation: animateWaves 3s linear infinite; 
-  } 
-   
-  .wave#wave4 { 
-    z-index: 999; 
-    opacity: 0.7; 
-    bottom: 20px; 
-    animation: animate 3s linear infinite; 
-  } 
-   
-  @keyframes animateWaves { 
-    0% { 
-      background-position-x: 1000px; 
-    } 
-    100% { 
-      background-positon-x: 0px; 
-    } 
-  } 
-   
-  @keyframes animate { 
-    0% { 
-      background-position-x: -1000px; 
-    } 
-    100% { 
-      background-positon-x: 0px; 
-    } 
-  } 
-  .header{
-    height: 94px;
-    position: fixed;
-    z-index: 1000;
-    gap: 180px;
-    max-width: 1600px;
-    background: rgb(249, 249, 247);
-  }
-  .header_tit{
-    margin-top: 35px;
-    font-family: Lobster;
-    font-size: 30px;
-    color: #2f70af;
-  }
-  .header_logo{
-    gap: 15px;
-  }
-  .menu{
-    gap: 20px;
-  }
-  nav{
-    display: flex;
-    align-items: center;
-    color:rgb(10, 4, 75);
-    font-weight: 700;
-  }
-  .header_right{
-    align-items: center;
-    display: flex;
-    gap: 20px;
-  }
-  .btn{
-    height: 50px;
-    border: 1px solid #2f70af;
-    border-radius: 6px;
-    padding: 15px;
-    transition: 0.3s;
-    color:#2f70af;
+.footer{
+  background: #91929C;
+  height: 220px;
 }
-  .btn:hover{
-    color: #fff;
-    background:#2f70af ;
-  }
-  .btn-outline-success{
-    color:#2f70af;
-  }
-  .progress{
-    height: 400px;
-    margin-top: -400px;
-  }
-  .progress, .progress-stacked{
-    --bs-progress-height: 400px;
-  }
+.con_tit{
+  padding-top: 20px;
+  text-align: center;
+}
+.con_txt{
 
-
-/*veshalka*/
-.btn-up {
-  z-index: 100000;
-  /* фиксированное позиционирование */
-  position: fixed;
-  /* цвет фона */
-  background: rgb(2, 0, 36);
-  background: #202326;
-  /* расстояние от правого края окна браузера */
-
-  right: 20px;
-  /* расстояние от нижнего края окна браузера */
-  bottom: 0;
-  /* скругление верхнего левого угла */
-  border-top-left-radius: 8px;
-  /* скругление верхнего правого угла */
-  border-top-right-radius: 8px;
-  /* вид курсора */
-  cursor: pointer;
-  /* отображение элемента как flex */
+  text-align: center;
+}
+ul{
   display: flex;
-  /* выравниваем элементы внутри элемента по центру вдоль поперечной оси */
-  align-items: center;
-  /* выравниваем элементы внутри элемента по центру вдоль главной оси */
-  justify-content: center;
-  /* ширина элемента */
-  width: 60px;
-  /* высота элемента */
-  height: 56px;
-  padding: 5px;
-  flex-direction: column;
-  }
-  #veshalka_txt{
-    font-weight: 500;
-    font-size: 18px;
-  }
-  .btn-up::before {
-  content: "";
-  width: 40px;
-  height: 40px;
-  background: transparent no-repeat center center;
-  background-size: 100% 100%;
-  background-image: url(img/veshalka.svg);
-  }
-  
-  .btn-up_hide {
-  display: none;
-  }
-  
-  @media (hover: hover) and (pointer: fine) {
-  .btn-up:hover {
-    background-color: #312e37; /* цвет заднего фона при наведении */
-  }
-  }
+}
+a {
+  outline: none;
+  text-decoration: none;
+  padding: 2px 1px 0;
+}
+
+a:link {
+  color: #265301;
+}
+
+a:visited {
+  color: #437a16;
+}
+
+a:focus {
+  border-bottom: 1px solid;
+  background: #bae498;
+}
+
+a:hover {
+  border-bottom: 1px solid;
+  background: #cdfeaa;
+}
+
+a:active {
+  background: #265301;
+  color: #cdfeaa;
+}
